@@ -1,0 +1,33 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int N1, N2, N3;
+	
+	cout << "Enter the First number: ";
+	cin >> N1;
+	cout << "Enter the Second number: ";
+	cin >> N2;
+	cout << "Enter the Third number: ";
+	cin >> N3;
+	
+	if (N1 > N2 && 	N1 > N3){
+		cout << "The Largest number is " << N1;
+	}
+	else if (N1 > N2 && N1 < N3)
+	{
+		cout << "The Largest number is " << N3;
+	}
+	else if (N1 < N2 && N2 > N3)
+	{
+		cout << "The Largest number is " << N2;
+	}else{
+		cout << "The Largest number is " << N3;
+	}
+	
+	_getch();
+	return 0;
+}
