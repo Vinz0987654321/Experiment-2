@@ -1,0 +1,44 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+int A, B, C, type, add;
+    
+    A = 995;
+    B = 1495;
+    C = 1995;
+    
+    cout<<"Type of Package  Letter of Package          Amount        Additional per hour" <<endl;
+    cout<<"Package A                A                    995                          20" <<endl;
+    cout<<"Package B                B                    1495                         10" <<endl;
+    cout<<"Package C                C                    1995                  Unlimited" <<endl;
+    
+    do {
+        cout<<"Enter the Letter of the Package" << endl;
+        cin >> type;
+    }
+    
+    while(0);{
+    if (type<=0 || type>=4){
+        cout<<"Invalid input, enter again: " <<endl;
+        cin>>type;}
+    
+    if (type == A) {
+    cout<<"Enter additional hours: " <<endl;
+    cin >> add;
+    cout<< "The total monthly bill is " << a + (add*20) <<endl; }
+    
+    if (type == B) {
+    cout<<"Enter additional hours: " <<endl;
+    cin >> add;
+    cout<< "The total monthly bill is " << b + (add*10) <<endl; }
+    
+    if (type == C) {
+    cout<< "The total monthly bill is " << c <<endl; }
+    }
+_getch();    
+return 0;
+}
