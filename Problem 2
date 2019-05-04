@@ -1,0 +1,35 @@
+#include <iostream>
+
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+	double B, CC, GU;
+	CC = 1.10;
+  
+  cout << "Hello There this is your water bill this month? \n";
+	cin >> B;
+	cout << "\n";
+	
+	cout << "How many gallons all in all have you used in your consumption? \n";
+	cin >> GU;
+	cout << "\n";
+	
+	if (B <= 0)
+	{
+	cout << "This would be your balance next month:";
+	cout << 35 + (CC*GU);
+	cout << "\nThank You and Have a nice day!";
+	}
+	else 
+	{
+	cout << "Thank you very much, but your remaining balance is " << B << "PHP. \n";
+	cout << "\n";
+	cout << "You need to pay your remaining balance:" << 35 + 20 + B + (CC*GU) << "PHP. \n";
+	cout << "\nThank you and Have a nice day!";
+	}
+_getch();
+return 0;
+}
